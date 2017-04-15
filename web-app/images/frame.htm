@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/etch.css">
+  <link rel="stylesheet" href="../css/frame.css">
+
+  <style id="../css/custom-css">
+  </style>
+  <script>
+  parent.FrameWindow = window;
+  parent.FrameDocument = document;
+  </script>
+  <script src="../js/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
+  <script src="../js/underscore-min.js"></script>
+  <script src="../js/backbone-min.js"></script>
+  <script src="../js/etch.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  
+  <script>
+  /*etch.config.buttonClasses = {
+    'all': ['bold', 'italic', 'underline']
+  };*/
+
+    
+    $(document).on('focusout', '[contenteditable="true"]', function(event) {     
+      if(parent.Jetstrap && parent.Jetstrap.builder) {       
+        parent.Jetstrap.builder.editableFocusLost(this);
+      }
+    });
+  
+
+  $(document).bind('etch.closed', function(event, editable, editor) {     
+    if(parent.Jetstrap && parent.Jetstrap.builder) {
+      parent.Jetstrap.builder.editableFocusLost(editable);
+    }
+  });
+
+  $(document).ready(function() {
+  
+  	  
+      $('body').bind('mousedown', function(e) {
+        if(e.target == $('body').get(0)) {
+          console.log('Down in body');          
+          if(parent.Jetstrap && parent.Jetstrap.builder) {          
+            parent.Jetstrap.builder.editableFocusLost();
+          }
+        }
+      });
+    });
+
+  </script></head>
+
+
+
+
+
+
+
+
+  <body class="design ds-component" data-componentid="page1"><div class="container ds-component" data-componentid="container1">
+  </div></body></html>

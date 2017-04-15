@@ -1,0 +1,66 @@
+/*-----MEDIA QUERIES CSS-----*/
+
+@media screen and (max-width: 1200px) { /* what happens when screen goes below 1200px; */
+	#Add .dialog.add{
+		width: 217px;
+		margin: 0px 0px 30px 0px;
+	}
+	
+	#Add .added{
+		display: none;
+	}
+	
+	#Export ul{
+		width: 520px;
+		margin: 0px auto;
+	}
+	
+	#Export li{
+		float: left;
+		padding: 0px 25px 30px;
+	}
+	
+	#Export li:nth-child(2n+1){
+		clear: both;		
+	}
+}
+@media screen and (max-width: 1082px) { /* what happens when screen goes below 1068px; */
+	#Home .home_benefits li{
+		width: 190px;
+	}
+	
+	#Home .home_benefits li .linefix{
+		display: none;
+	}
+	
+	table.data tr.edit_row .col.short{
+		height: 316px;	
+	}
+}
+@media screen and (max-width: 1024px) { /* what happens when screen goes below 1024px; */
+	.form_block{
+		margin: 0px 15px 30px 0px;
+	}
+	
+	#Request .post{
+		width: 244px;	
+	}
+	
+	#Home .heading{
+		font-size: 5.5em;	
+	}
+	
+	#Home .home_steps li{
+		margin: 0px 15px 0px 0px;
+	}
+	
+	.the_story{
+		margin: 35px -2.5% 0px;	
+	}
+}
+@media screen and (max-width: 996px) { /* what happens when screen goes below 1024px; */
+	.the_story{
+		margin: 35px -4% 0px;	
+	}
+}
+

@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.shim {
+  /*border: 1px dashed #ccc;*/
+  opacity: 0.8;
+}
+
+body {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+/* Helper sizes */
+
+.ds-hover {
+  /*border: 1px solid #91C4DF;*//*dashed #898989;*/
+  background-color: #E4F3F8 !important;
+  border-radius: 3px !important;
+}
+.ds-selected {
+  /*border: 1px solid #009ff2;*/
+  background-color: #009ff2 !important;
+}
+
+.ds-tag {
+  position: absolute;
+  opacity: 0.9;
+  z-index: 9999;
+  background-color: #fff;
+  padding: 0px 3px;
+  font-size: 10px;
+  border: 2px solid #aaa;
+  border-radius: 3px;
+}
+
+
+/* Default sizes to keep things sane */
+body.design > .container {
+  min-height: 2000px;
+}
+body.design form {
+  min-height: 40px;
+  background-color: #ccc;
+}
+
+body.design .btn-toolbar {
+  background-color: #ccc;
+  min-height: 20px;
+}
+
+body.design .row {
+  min-height: 50px;
+}
+
+body.design .row > div, body.design .row-fluid > div {
+  min-height: 30px;
+  border-radius: 5px;
+  /*border: 1px dotted #ccc;*/
+  -moz-box-shadow: inset 0px 0px 4px 0px #a1a1a1;
+  -webkit-box-shadow: inset 0px 0px 4px 0px #a1a1a1;
+  -o-box-shadow: inset 0px 0px 4px 0px #a1a1a1;
+  box-shadow: inset 0px 0px 4px 0px #a1a1a1;
+}
